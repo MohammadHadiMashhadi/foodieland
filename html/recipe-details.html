@@ -7,17 +7,18 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
+<script src="../js/input-component.js"></script>
+<script src="../js/like-more.js"></script>
 <body>
     <header>
         <span class="logo">
             Foodieland<span>.</span>
         </span>
         <ul class="menu">
-            <li class="font-SemiBold">Home</li>
-            <li class="font-SemiBold">Recipes</li>
-            <li class="font-SemiBold">Blog</li>
-            <li class="font-SemiBold">Contact</li>
-            <li class="font-SemiBold">About us</li>
+            <li><a class="font-SemiBold" href="index.html">Home</a></li>
+            <li><a class="font-SemiBold" href="blog.html">Blog</a></li>
+            <li><a class="font-SemiBold" href="contact-us.html">Contact</a></li>
+            <li><a class="font-SemiBold" href="contact-us.html">About us</a></li>
         </ul>
         <ul class="social">
             <li><a href="#"><img src="../icons/001-facebook.svg"></a></li>
@@ -288,7 +289,7 @@
             <div class="other-recipe">
                 <h3 class="other-recipe-title">Other Recipe</h3>
                 <!-- item1 -->
-                <div class="other-recipe-item">
+                <a href="recipe-details.html" target="_blank"  class="other-recipe-item">
                     <div class="image-wrapper">
                         <img src="../img/Recipe-Details/Mask Group.png">
                     </div>
@@ -301,9 +302,9 @@
                             By Andreas Paul
                         </h4>
                     </div>
-                </div>
+                </a>
                 <!-- item2 -->
-                <div class="other-recipe-item">
+                <a href="recipe-details.html" target="_blank"  class="other-recipe-item">
                     <div class="image-wrapper">
                         <img src="../img/Recipe-Details/Mask Group (1).png">
                     </div>
@@ -316,9 +317,9 @@
                             By Andreas Paul
                         </h4>
                     </div>
-                </div>
+                </a>
                 <!-- item3 -->
-                <div class="other-recipe-item">
+                <a href="recipe-details.html" target="_blank"  class="other-recipe-item">
                     <div class="image-wrapper">
                         <img src="../img/Recipe-Details/Mask Group (2).png">
                     </div>
@@ -331,7 +332,7 @@
                             By Andreas Paul
                         </h4>
                     </div>
-                </div>
+                </a>
                 <img src="../img/homepage/Ads.png">
             </div>
           </section>
@@ -351,103 +352,133 @@
                 </div>
             </form>
                 <div class="image-wrapper-left">
-                    <img src="../img/homepage/salad.png" alt="">
+                    <img src="../img/homepage/salad.png">
                 </div>
                 <div class="image-wrapper-right">
-                    <img src="../img/homepage/Photo.png" alt="">
+                    <img src="../img/homepage/Photo.png">
                 </div>
-         </section>
-         <section class="like-more with-container m-t-section">
-            <h2 class="like-more-title">You may like these recipe too</h2>
-            <div class="product-like-more">
-                <div class="main-li-layout">
-                    <div class="item">
-                    <div class="img-wrapper">
-                        <img class="image" src="../img/homepage/Mask Group (9).png" alt="">
-                        <span class="like-btn">
-                            <img src="../icons/Group 852.svg">
-                        </span>
-                    </div>
-                    <h3 class="item-title font-Bold">
-                        Mixed Tropical Fruit Salad with Superfood Boosts
-                    </h3>
-                    <ul class="row-details">
-                        <li>
-                            <img src="../icons/Timer.svg">
-                            <h5>30 Minutes</h5>
-                        </li>
-                        <li>
-                            <img src="../icons/ForkKnife.svg">
-                            <h5>Healthy</h5>
-                        </li>
-                    </ul>
-                    </div>
-                    <div class="item">
-                        <div class="img-wrapper">
-                            <img class="image" src="../img/homepage/Mask Group (10).png" alt="">
-                            <span class="like-btn">
-                                <img src="../icons/Group 852 (1).svg">
-                            </span>
-                        </div>
-                        <h3 class="item-title font-Bold">
-                            Big and Juicy Wagyu Beef Cheeseburger
-                        </h3>
-                        <ul class="row-details">
-                            <li>
-                                <img src="../icons/Timer.svg">
-                                <h5>30 Minutes</h5>
-                            </li>
-                            <li>
-                                <img src="../icons/ForkKnife.svg">
-                                <h5>Western</h5>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="item">
-                        <div class="img-wrapper">
-                            <img class="image" src="../img/homepage/Mask Group (11).png" alt="">
-                            <span class="like-btn">
-                                <img src="../icons/Group 852.svg">
-                            </span>
-                        </div>
-                        <h3 class="item-title font-Bold">
-                            Healthy Japanese Fried Rice with Asparagus
-                        </h3>
-                        <ul class="row-details">
-                            <li>
-                                <img src="../icons/Timer.svg">
-                                <h5>30 Minutes</h5>
-                            </li>
-                            <li>
-                                <img src="../icons/ForkKnife.svg">
-                                <h5>Healthy</h5>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="item">
-                        <div class="img-wrapper">
-                            <img class="image" src="../img/homepage/Mask Group (12).png" alt="">
-                            <span class="like-btn">
-                                <img src="../icons/Group 852 (1).svg">
-                            </span>
-                        </div>
-                        <h3 class="item-title font-Bold">
-                            Cauliflower Walnut Vegetarian Taco Meat
-                        </h3>
-                        <ul class="row-details">
-                            <li>
-                                <img src="../icons/Timer.svg">
-                                <h5>30 Minutes</h5>
-                            </li>
-                            <li>
-                                <img src="../icons/ForkKnife.svg">
-                                <h5>Eastern</h5>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- //// -->
+        </section>
+        <section class="like-more with-container m-t-section">
+
+            <div class="like-more-header">
+                <h2 class="like-more-title">You may like these recipe too</h2>
             </div>
-         </section>
+
+            <div class="like-slider-container">
+
+                <button class="slider-arrow-left" id="likePrev" aria-label="Previous">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+                </button>
+
+                <div class="like-slider-wrapper">
+                    <div class="like-slider-track" id="likeSliderTrack">
+
+                        <a href="recipe-details.html" class="item">
+                            <div class="img-wrapper">
+                                <img class="image" src="../img/homepage/Mask Group (9).png">
+                                <span class="like-btn"><img src="../icons/Group 852.svg"></span>
+                            </div>
+                            <h3 class="item-title font-Bold">Mixed Tropical Fruit Salad with Superfood Boosts</h3>
+                            <ul class="row-details">
+                                <li><img src="../icons/Timer.svg"><h5>30 Minutes</h5></li>
+                                <li><img src="../icons/ForkKnife.svg"><h5>Healthy</h5></li>
+                            </ul>
+                        </a>
+
+                        <a href="recipe-details.html" class="item">
+                            <div class="img-wrapper">
+                                <img class="image" src="../img/homepage/Mask Group (10).png">
+                                <span class="like-btn"><img src="../icons/Group 852 (1).svg"></span>
+                            </div>
+                            <h3 class="item-title font-Bold">Big and Juicy Wagyu Beef Cheeseburger</h3>
+                            <ul class="row-details">
+                                <li><img src="../icons/Timer.svg"><h5>30 Minutes</h5></li>
+                                <li><img src="../icons/ForkKnife.svg"><h5>Western</h5></li>
+                            </ul>
+                        </a>
+
+                        <a href="recipe-details.html" class="item">
+                            <div class="img-wrapper">
+                                <img class="image" src="../img/homepage/Mask Group (11).png">
+                                <span class="like-btn"><img src="../icons/Group 852.svg"></span>
+                            </div>
+                            <h3 class="item-title font-Bold">Healthy Japanese Fried Rice with Asparagus</h3>
+                            <ul class="row-details">
+                                <li><img src="../icons/Timer.svg"><h5>30 Minutes</h5></li>
+                                <li><img src="../icons/ForkKnife.svg"><h5>Healthy</h5></li>
+                            </ul>
+                        </a>
+
+                        <a href="recipe-details.html" class="item">
+                            <div class="img-wrapper">
+                                <img class="image" src="../img/homepage/Mask Group (12).png">
+                                <span class="like-btn"><img src="../icons/Group 852 (1).svg"></span>
+                            </div>
+                            <h3 class="item-title font-Bold">Cauliflower Walnut Vegetarian Taco Meat</h3>
+                            <ul class="row-details">
+                                <li><img src="../icons/Timer.svg"><h5>30 Minutes</h5></li>
+                                <li><img src="../icons/ForkKnife.svg"><h5>Eastern</h5></li>
+                            </ul>
+                        </a>
+
+                        <a href="recipe-details.html" class="item">
+                            <div class="img-wrapper">
+                                <img class="image" src="../img/homepage/Mask Group (9).png">
+                                <span class="like-btn"><img src="../icons/Group 852.svg"></span>
+                            </div>
+                            <h3 class="item-title font-Bold">Mixed Tropical Fruit Salad with Superfood Boosts</h3>
+                            <ul class="row-details">
+                                <li><img src="../icons/Timer.svg"><h5>30 Minutes</h5></li>
+                                <li><img src="../icons/ForkKnife.svg"><h5>Healthy</h5></li>
+                            </ul>
+                        </a>
+
+                        <a href="recipe-details.html" class="item">
+                            <div class="img-wrapper">
+                                <img class="image" src="../img/homepage/Mask Group (10).png">
+                                <span class="like-btn"><img src="../icons/Group 852 (1).svg"></span>
+                            </div>
+                            <h3 class="item-title font-Bold">Big and Juicy Wagyu Beef Cheeseburger</h3>
+                            <ul class="row-details">
+                                <li><img src="../icons/Timer.svg"><h5>30 Minutes</h5></li>
+                                <li><img src="../icons/ForkKnife.svg"><h5>Western</h5></li>
+                            </ul>
+                        </a>
+
+                        <a href="recipe-details.html" class="item">
+                            <div class="img-wrapper">
+                                <img class="image" src="../img/homepage/Mask Group (11).png">
+                                <span class="like-btn"><img src="../icons/Group 852.svg"></span>
+                            </div>
+                            <h3 class="item-title font-Bold">Healthy Japanese Fried Rice with Asparagus</h3>
+                            <ul class="row-details">
+                                <li><img src="../icons/Timer.svg"><h5>30 Minutes</h5></li>
+                                <li><img src="../icons/ForkKnife.svg"><h5>Healthy</h5></li>
+                            </ul>
+                        </a>
+
+                        <a href="recipe-details.html" class="item">
+                            <div class="img-wrapper">
+                                <img class="image" src="../img/homepage/Mask Group (12).png">
+                                <span class="like-btn"><img src="../icons/Group 852 (1).svg"></span>
+                            </div>
+                            <h3 class="item-title font-Bold">Cauliflower Walnut Vegetarian Taco Meat</h3>
+                            <ul class="row-details">
+                                <li><img src="../icons/Timer.svg"><h5>30 Minutes</h5></li>
+                                <li><img src="../icons/ForkKnife.svg"><h5>Eastern</h5></li>
+                            </ul>
+                        </a>
+                    </div>
+                </div>
+
+                <button class="slider-arrow-right" id="likeNext" aria-label="Next">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+                </button>
+
+            </div>
+
+            <div class="like-slider-dots" id="likeSliderDots"></div>
+        </section>
      </main>
      <footer class="footer m-t-section with-container">
         <div class="top-footer">
@@ -461,10 +492,10 @@
             </div>
             <div class="top-right-wrapper">
                 <ul class="menu-footer">
-                    <li class="font-SemiBold">Recipes</li>
-                    <li class="font-SemiBold">Blog</li>
-                    <li class="font-SemiBold">Contact</li>
-                    <li class="font-SemiBold">About us</li>
+                    <li><a class="font-SemiBold" href="recipe-details.html">Recipes</a></li>
+                    <li><a class="font-SemiBold" href="blog.html">Blog</a></li>
+                    <li><a class="font-SemiBold" href="contact-us.html">Contact</a></li>
+                    <li><a class="font-SemiBold" href="contact-us.html">About us</a></li>
                 </ul>
             </div>
         </div>

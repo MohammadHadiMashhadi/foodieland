@@ -7,17 +7,17 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
+<script src="../js/blog-search.js"></script>
 <body>
     <header>
         <span class="logo">
             Foodieland<span>.</span>
         </span>
         <ul class="menu">
-            <li class="font-SemiBold">Home</li>
-            <li class="font-SemiBold">Recipes</li>
-            <li class="font-SemiBold">Blog</li>
-            <li class="font-SemiBold">Contact</li>
-            <li class="font-SemiBold">About us</li>
+            <li><a class="font-SemiBold" href="index.html">Home</a></li>
+            <li><a class="font-SemiBold" href="blog.html">Blog</a></li>
+            <li><a class="font-SemiBold" href="contact-us.html">Contact</a></li>
+            <li><a class="font-SemiBold" href="contact-us.html">About us</a></li>
         </ul>
         <ul class="social">
             <li><a href="#"><img src="../icons/001-facebook.svg"></a></li>
@@ -31,8 +31,8 @@
             <h1 class="title">Blog & Article</h1>
             <h2 class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</h2>
             <div class="row-input no-blur">
-                <input type="text" placeholder="Search article, news or recipe ..." class="email-input no-blur" name="Search" id="Search">
-                <input type="submit"  name="Search" id="Search" class="email-botton font-SemiBold no-blur" value="Search">
+                <input type="text" placeholder="Search article, news or recipe ..." class="email-input no-blur" name="Search" id="searchInput">
+                <input type="submit"  name="Search" id="searchBtn" class="email-botton font-SemiBold no-blur" value="Search">
             </div>
         </div>
          <!-- Ingredients section -->
@@ -183,7 +183,7 @@
             <div class="other-recipe">
                 <h3 class="other-recipe-title">Other Recipe</h3>
                 <!-- item1 -->
-                <div class="other-recipe-item">
+                <a href="recipe-details.html" target="_blank" class="other-recipe-item">
                     <div class="image-wrapper">
                         <img src="../img/Recipe-Details/Mask Group.png">
                     </div>
@@ -196,9 +196,9 @@
                             By Andreas Paul
                         </h4>
                     </div>
-                </div>
+                </a>
                 <!-- item2 -->
-                <div class="other-recipe-item">
+                <a href="recipe-details.html" target="_blank"  class="other-recipe-item">
                     <div class="image-wrapper">
                         <img src="../img/Recipe-Details/Mask Group (1).png">
                     </div>
@@ -211,9 +211,9 @@
                             By Andreas Paul
                         </h4>
                     </div>
-                </div>
+                </a>
                 <!-- item3 -->
-                <div class="other-recipe-item">
+                <a href="recipe-details.html" target="_blank"  class="other-recipe-item">
                     <div class="image-wrapper">
                         <img src="../img/Recipe-Details/Mask Group (2).png">
                     </div>
@@ -226,14 +226,14 @@
                             By Andreas Paul
                         </h4>
                     </div>
-                </div>
+                </a>
                 <img src="../img/homepage/Ads.png">
             </div>
           </section>
           <nav class="blog-pagination">
             <ul>
-                <li class="active"><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
+                <li class="active"><a href="./blog-pagination/blog-1.html">1</a></li>
+                <li><a href="./blog-pagination/blog-2.html">2</a></li>
                 <li><a href="#">3</a></li>
                 <li><a href="#">4</a></li>
                 <li><a href="#">5</a></li>
@@ -276,10 +276,10 @@
             </div>
             <div class="top-right-wrapper">
                 <ul class="menu-footer">
-                    <li class="font-SemiBold">Recipes</li>
-                    <li class="font-SemiBold">Blog</li>
-                    <li class="font-SemiBold">Contact</li>
-                    <li class="font-SemiBold">About us</li>
+                    <li><a class="font-SemiBold" href="recipe-details.html">Recipes</a></li>
+                    <li><a class="font-SemiBold" href="blog.html">Blog</a></li>
+                    <li><a class="font-SemiBold" href="contact-us.html">Contact</a></li>
+                    <li><a class="font-SemiBold" href="contact-us.html">About us</a></li>
                 </ul>
             </div>
         </div>
