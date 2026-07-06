@@ -2252,3 +2252,415 @@ main {
 textarea {
     resize: none;
 }
+
+/* ======================================================= */
+/* PHASE 3 - RESPONSIVE DESIGN (MOBILE)                     */
+/* ======================================================= */
+
+/* ---------- hamburger button (hidden on desktop) ---------- */
+.hamburger-btn {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.8rem;
+    height: 2rem;
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    z-index: 20;
+}
+
+.hamburger-btn span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #121212;
+    border-radius: 3px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* animate to an "X" when the menu is open */
+.hamburger-btn.active span:nth-child(1) {
+    transform: translateY(8.5px) rotate(45deg);
+}
+
+.hamburger-btn.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-btn.active span:nth-child(3) {
+    transform: translateY(-8.5px) rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+
+    /* ---------- global containers ---------- */
+    .with-container {
+        width: 92%;
+    }
+
+    .with-container-2 {
+        width: 92%;
+    }
+
+    .m-t-section {
+        margin-top: 6rem;
+    }
+
+    /* ================= HEADER ================= */
+    header {
+        padding: 2rem 2.4rem;
+        flex-wrap: wrap;
+        row-gap: 2rem;
+    }
+
+    .hamburger-btn {
+        display: flex;
+    }
+
+    /* menu + social are hidden until the hamburger is toggled */
+    .menu,
+    .social {
+        display: none;
+    }
+
+    header.nav-active .menu,
+    header.nav-active .social {
+        display: flex;
+        flex: 0 0 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0;
+        padding-top: 1.6rem;
+        border-top: 1px solid #eaeaea;
+    }
+
+    header.nav-active .menu li {
+        margin-right: 0;
+        margin-bottom: 1.8rem;
+    }
+
+    header.nav-active .menu li:last-child {
+        margin-bottom: 0;
+    }
+
+    header.nav-active .social {
+        flex-direction: row;
+        padding-top: 0;
+        border-top: none;
+    }
+
+    /* ================= FOOTER ================= */
+    .footer {
+        height: auto;
+        padding: 3rem 0;
+    }
+
+    .top-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding-bottom: 2.5rem;
+        row-gap: 2.5rem;
+    }
+
+    .top-left-wrapper,
+    .top-right-wrapper {
+        width: 100%;
+        height: auto;
+    }
+
+    .top-right-wrapper {
+        justify-content: flex-start;
+    }
+
+    .menu-footer {
+        flex-direction: column;
+    }
+
+    .menu-footer li {
+        margin-right: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    .menu-footer li:last-child {
+        margin-bottom: 0;
+    }
+
+    .bottom-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        height: auto;
+        row-gap: 2rem;
+        padding-top: 2.5rem;
+    }
+
+    /* ================= BLOG POST PAGE ================= */
+    .blog-head {
+        padding-top: 1rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .blog-head .page-title {
+        font-size: 3.2rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .blog-head .blog-head__details-list {
+        flex-wrap: wrap;
+        margin-bottom: 2.5rem;
+    }
+
+    .blog-head .blog-head__desc {
+        max-width: 100%;
+        margin-bottom: 3rem;
+    }
+
+    .blog-post__content {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .blog-post__content .right-wrapper {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        position: static;
+        margin-bottom: 3rem;
+    }
+
+    .blog-post__content .right-wrapper span {
+        display: none;
+    }
+
+    .blog-post__content .share {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .blog-post__content .share li:not(:last-of-type) {
+        margin-bottom: 0;
+        margin-right: 3rem;
+    }
+
+    .blog-post__content .left-wrapper {
+        width: 100%;
+    }
+
+    .blog-post__content .left-wrapper li h4 {
+        font-size: 2rem;
+    }
+
+    .special-box {
+        transform: none;
+        padding: 3rem 2rem;
+    }
+
+    .special-box p {
+        font-size: 1.9rem !important;
+        line-height: 3.2rem !important;
+    }
+
+    /* "Check out the delicious recipe" slider -> single column on mobile */
+    .like-more-title {
+        font-size: 2.2rem;
+    }
+
+    .like-slider-container {
+        gap: 0.8rem;
+    }
+
+    .like-slider-track .item {
+        flex: 0 0 100%;
+    }
+
+    .slider-arrow-left,
+    .slider-arrow-right {
+        position: static;
+        width: 3.8rem;
+        height: 3.8rem;
+        flex-shrink: 0;
+    }
+
+    /* ================= CONTACT US PAGE ================= */
+    .contact-top-wrapper {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .contact-top-wrapper .left-wrapper {
+        width: 60%;
+        padding: 0 0 2.5rem;
+    }
+
+    .contact-top-wrapper .right-wrapper {
+        width: 100%;
+    }
+
+    .contact-top-wrapper .row-deta {
+        width: 100%;
+    }
+
+    .contact-top-wrapper .send-btn {
+        width: 100%;
+        justify-content: center;
+        padding: 1.8rem 0;
+    }
+
+    /* ================= RECIPE DETAILS PAGE ================= */
+    .main-top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main-top .left-wrapper {
+        width: 100%;
+        padding: 2rem 0;
+    }
+
+    .main-top .title {
+        font-size: 2.8rem;
+        white-space: normal;
+        margin-bottom: 2.5rem;
+    }
+
+    .health-details {
+        flex-wrap: wrap;
+        row-gap: 1.5rem;
+    }
+
+    .main-top .right-wrapper {
+        width: 100%;
+        justify-content: flex-start;
+        margin-top: 2.5rem;
+        gap: 2.2rem;
+    }
+
+    .main-top .right-wrapper li:first-of-type {
+        margin-right: 0;
+    }
+
+    .video-section {
+        margin-top: 2.5rem;
+    }
+
+    .video-box {
+        width: 100%;
+        height: 26rem;
+        margin-bottom: 2rem;
+    }
+
+    .video-details {
+        width: 100%;
+        height: auto;
+        padding: 3rem 2rem;
+    }
+
+    .video-description {
+        margin-top: 2.5rem;
+    }
+
+    .ingredients-section {
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+
+    .send-deta-ingredients-wrappper {
+        width: 100%;
+    }
+
+    .send-deta-ingredients li:hover .ingredients-top {
+        margin-left: 0;
+        scale: 1;
+    }
+
+    .other-recipe {
+        width: 100%;
+        position: static;
+        margin-top: 4rem;
+    }
+
+    /* ================= BLOG LIST PAGE ================= */
+    .blog-main {
+        width: 100%;
+        padding-top: 1rem;
+    }
+
+    .blog-main .title {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .blog-main .subtitle {
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 3.5rem;
+    }
+
+    .blog-main .row-input {
+        width: 100%;
+    }
+
+    .blog-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .blog-item-img {
+        width: 100%;
+    }
+
+    .blog-item-content {
+        width: 100%;
+        padding-left: 0;
+        padding-top: 2rem;
+    }
+
+    .blog-item-content .title {
+        font-size: 1.9rem;
+    }
+
+    .blog-pagination {
+        max-width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .blog-pagination ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 1rem;
+    }
+
+    .blog-pagination ul li {
+        width: 4.2rem;
+        height: 4.2rem;
+    }
+
+    /* ================= NEWSLETTER (email-box, shared) ================= */
+    .email-box {
+        height: auto;
+        min-height: 30rem;
+        padding: 4rem 2rem;
+        border-radius: 30px;
+    }
+
+    .get-deta {
+        max-width: 100%;
+    }
+
+    .email-box h2 {
+        font-size: 2.6rem;
+        text-align: center;
+    }
+
+    .row-input {
+        width: 100%;
+    }
+
+    .image-wrapper-left,
+    .image-wrapper-right {
+        display: none;
+    }
+}
